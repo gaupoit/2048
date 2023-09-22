@@ -9,11 +9,12 @@
 html,
 body {
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-    color: #776e65;
+    color: #fff;
     font-size: 18px;
-    background: rgba(238, 228, 218, 0.5);
+    background: #071a52;
     overflow: hidden;
     height: 100%;
+    background-image: url("https://eggforce.io/static/media/whitelist--desktop-medium.286bc9f84d22a8affac7.png")
 }
 
 a {
@@ -44,7 +45,7 @@ a {
 }
 
 h1.title {
-    font-size: 74px;
+    font-size: 65px;
     line-height: 66px;
     font-weight: bold;
 }
@@ -117,7 +118,9 @@ h2.subtitle {
     margin-top: 15px;
     width: 450px;
     height: 450px;
-    background: #bbada0;
+    background: #1b0e02;
+    background-image: url("/assets/egg-game-container.png");
+    background-size: contain;
     border-radius: 6px;
     touch-action: none;
 }
@@ -166,7 +169,7 @@ h2.subtitle {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 53px;
+    font-size: 25px;
     font-weight: bold;
     background: #eee4da;
     transition: all 0.15s ease;
@@ -181,18 +184,18 @@ h2.subtitle {
 }
 
 .tile[data-val] {
-    color: #f9f6f2;
+    /* color: #f9f6f2; */
 }
 
 .tile[data-val="2"],
 .tile[data-val="4"] {
-    color: #776e65;
+    /* color: #776e65; */
 }
 
 .tile[data-val="128"],
 .tile[data-val="256"],
 .tile[data-val="512"] {
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .tile[data-val="1024"],
@@ -202,46 +205,66 @@ h2.subtitle {
 
 .tile[data-val="4"] {
     background: #ede0c8;
+    background-image: url('/assets/metal-rock.png');
+    background-size: contain;
 }
 
 .tile[data-val="8"] {
     background: #f2b179;
+    background-image: url('/assets/metal-silver.png');
+    background-size: contain;
 }
 
 .tile[data-val="16"] {
     background: #f59563;
+    background-image: url('/assets/metal-gold.png');
+    background-size: contain;
 }
 
 .tile[data-val="32"] {
     background: #f67c5f;
+    background-image: url('/assets/metal-platinum.png');
+    background-size: cover;
 }
 
 .tile[data-val="64"] {
     background: #f65e3b;
+    background-image: url('/assets/casper-egg.png');
+    background-size: cover;
 }
 
 .tile[data-val="128"] {
     background: #edcf72;
+    background-image: url('/assets/casper-delegation.png');
+    background-size: cover;
 }
 
 .tile[data-val="256"] {
     background: #edcc61;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    background-image: url('/assets/speedy-staking.png');
+    background-size: cover;
 }
 
 .tile[data-val="512"] {
     background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    background-image: url('/assets/casperdash.png');
+    background-size: cover;
 }
 
 .tile[data-val="1024"] {
     background: #edc53f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    background-image: url('/assets/casperdash.png');
+    background-size: cover;
 }
 
 .tile[data-val="2048"] {
     background: #edc22e;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    background-image: url('/assets/ogs.png');
+    background-size: cover;
 }
 
 .pop-container {
@@ -324,6 +347,5 @@ h2.subtitle {
     justify-content: space-around;
     align-items: flex-end;
     font-size: 0.75rem;
-    color: #333;
     opacity: 0.7;
 }
